@@ -1,0 +1,38 @@
+{
+  "name": "@jhzhu89/mcp-server-web-search",
+  "version": "0.1.0",
+  "description": "MCP Server providing web search via Azure OpenAI Responses API",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jiahao Zhu <jiahzhu@outlook.com>",
+  "bin": {
+    "mcp-server-web-search": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "start:http": "bun run src/index.ts -- --http",
+    "dev": "bun --watch run src/index.ts -- --http",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "test": "bun test",
+    "format": "prettier --write src test",
+    "lint": "eslint src",
+    "release:patch": "npm version patch && git push && git push --tags",
+    "release:minor": "npm version minor && git push && git push --tags",
+    "release:major": "npm version major && git push && git push --tags"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.13.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "openai": "^6.16.0",
+    "zod": "^3.25.61"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/bun": "latest",
+    "dotenv": "^17.2.3",
+    "typescript-eslint": "^8.33.1"
+  }
+}
