@@ -1,6 +1,6 @@
 {
   "name": "@jhzhu89/mcp-server-web-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP Server providing web search via Azure OpenAI Responses API",
   "type": "module",
   "license": "MIT",
