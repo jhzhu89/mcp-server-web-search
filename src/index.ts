@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 import { server } from "./server.js";
 
 if (process.argv.includes("--http")) {
