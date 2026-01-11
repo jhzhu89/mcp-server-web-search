@@ -5,6 +5,10 @@
   "type": "module",
   "license": "MIT",
   "author": "Jiahao Zhu <jiahzhu@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhzhu89/mcp-server-web-search"
+  },
   "bin": {
     "mcp-server-web-search": "./src/index.ts"
   },
